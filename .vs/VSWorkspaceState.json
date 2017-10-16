@@ -1,9 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+    "\\bin",
     "\\models",
+    "\\public",
+    "\\public\\images",
+    "\\public\\javascripts",
+    "\\public\\stylesheets",
     "\\routes"
   ],
-  "SelectedNode": "\\models\\dishes.js",
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }

@@ -10,7 +10,7 @@ var  favorite= express.Router();
 favorite.use(bodyParser.json());
 
 favorite.route('/')
-.get( function (req, res, next) {
+.get( Verify.verifyOrdinaryUser,function (req, res, next) {
     Dishes.find(req.query)
         .populate('comments.postedBy')
         .exec(function (err, dish) {
@@ -31,7 +31,7 @@ favorite.route('/:dishId')
 })
 .put( function (req, res, next) {
     Dishes.findByIdAndUpdate(req.params.dishId, {
-	
+
     })
 })
 .delete( function (req, res, next) {
